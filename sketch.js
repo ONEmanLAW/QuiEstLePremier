@@ -1,24 +1,11 @@
-
-/////////////////////////////
-//////////VARIABLES//////////
-/////////////////////////////
+const ledSound = new Audio('audios/ledOn.wav');
 
 let nbrErrors = 0;
 let nbrWins = 0;
 
-/////////////////////////////
-//////////DOCUMENT///////////
-/////////////////////////////
-
 document.addEventListener("DOMContentLoaded", function () {
   resetGame();
 });
-
-/////////////////////////////
-//////////FUNCTION///////////
-/////////////////////////////
-
-
 
 /* Pour johnny
 function resolve() {
@@ -39,6 +26,10 @@ function incrementError() {
       });
   }
   */
+  function ledOnClickSound () {
+    ledSound.currentTime = 0;
+    ledSound.play(); 
+  };
 
 function resetGame() {
   $.ajax({
@@ -52,15 +43,19 @@ function resetGame() {
         nbrWins++
         if (nbrWins === 1) {
           console.log("Encore 2 fois pour gagner");
+          ledOnClickSound();
         };
 
         if (nbrWins === 2) {
           console.log("Encore 1 fois pour gagner");
+          ledOnClickSound();
         };
 
         if (nbrWins === 3) {
           console.warn("Gagner fin du module!, appeller en ajax la fonction Resolve de johnny");
           //resolve(); Pour Johnny
+          document.querySelector('.led img').src = 'assets/ledVerte.png';
+          ledOnClickSound();
         };
         resetGame();
       });

@@ -19,6 +19,9 @@
 
         
         <table id="table"></table>
+        <div class="led">
+            <img src="assets/ledRouge.png" class="led">
+        </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="sketch.js"></script>
