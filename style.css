@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Blogger";
-  src: url("fonts/BloggerSans-Medium.ttf") format("truetype");
+  font-family: "Minecraft";
+  src: url("fonts/Minecraft.ttf") format("truetype");
 }
 
 body {
   background: url(assets/fondModule.png);
   background-repeat: no-repeat; 
-  font-family: "Blogger";
+  font-family: "Minecraft";
 }
 
 table {
@@ -20,7 +20,7 @@ table {
 
 th, td {
   width: 165px;
-  height: 74px;
+  height: 100px;
   text-align: center;
   font-size: 22px;
 }
@@ -89,6 +89,3 @@ th {
     top: 165px;
     left: 420px;
 }
-
-
-
