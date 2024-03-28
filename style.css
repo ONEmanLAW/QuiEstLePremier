@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Minecraft";
-  src: url("fonts/Minecraft.ttf") format("truetype");
+  font-family: "Blogger";
+  src: url("fonts/BloggerSans-Medium.ttf") format("truetype");
 }
 
 body {
-  font-family: "Minecraft";
   background: url(assets/fondModule.png);
   background-repeat: no-repeat; 
+  font-family: "Blogger";
 }
 
 table {
@@ -15,6 +15,7 @@ table {
   position: absolute;
   left: 36px;
   top: 165px;
+  
 }
 
 th, td {
@@ -26,10 +27,10 @@ th, td {
 
 th {
   position: absolute;
-    bottom: 237px;
+    bottom: 220px;
     left: 88px;
     color: white;
-    font-size: 22px;
+    font-size: 35px;
 }
 
 td {
@@ -50,14 +51,44 @@ th {
 }
 */
 
-.led {
+.led img {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 17px;
-  right: 127px;
+  top: 30px;
+  left: 405px;
 }
 
+.palette img {
+  width: 100px;
+  height: 241px;
+  position: absolute;
+  top: 150px;
+  left: 405px;
+}
+
+.led-etape-1 {
+  width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 305px;
+    left: 420px;
+}
+
+.led-etape-2 {
+  width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 235px;
+    left: 420px;
+}
+.led-etape-3 {
+  width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 165px;
+    left: 420px;
+}
 
 
 

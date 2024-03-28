@@ -43,17 +43,20 @@ function resetGame() {
         nbrWins++
         if (nbrWins === 1) {
           console.log("Encore 2 fois pour gagner");
+          document.querySelector('.led-etape-1').src = 'assets/ledVerteEtape.png';
           ledOnClickSound();
         };
 
         if (nbrWins === 2) {
           console.log("Encore 1 fois pour gagner");
+          document.querySelector('.led-etape-2').src = 'assets/ledVerteEtape.png';
           ledOnClickSound();
         };
 
         if (nbrWins === 3) {
           console.warn("Gagner fin du module!, appeller en ajax la fonction Resolve de johnny");
           //resolve(); Pour Johnny
+          document.querySelector('.led-etape-3').src = 'assets/ledVerteEtape.png';
           document.querySelector('.led img').src = 'assets/ledVerte.png';
           ledOnClickSound();
         };
