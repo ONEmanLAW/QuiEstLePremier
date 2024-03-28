@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("fonts/Minecraft.ttf") format("truetype");
+}
+
+body {
+  font-family: "Minecraft";
+  background: url(assets/fondModule.png);
+  background-repeat: no-repeat; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  position: absolute;
+  left: 36px;
+  top: 165px;
+}
+
+th, td {
+  width: 165px;
+  height: 74px;
+  text-align: center;
+  font-size: 22px;
+}
+
+th {
+  position: absolute;
+    bottom: 237px;
+    left: 88px;
+    color: white;
+    font-size: 22px;
+}
+
+td {
+  width: 100px;
+  height: 70px;
+}
+
+img {
+  width: 180px;
+  height: 75px;
+  margin: -10px;
+}
+
+/*
+th {
+  background-color: #333;
+  color: #fff;
+}
+*/
+
+
+
+
