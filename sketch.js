@@ -1,4 +1,4 @@
-const ledSound = new Audio('audios/ledOn.wav');
+const ledSound2 = new Audio('audios/ledOn.wav');
 const errorSound = new Audio('audios/error.wav');
 
 let nbrErrors = 0;
@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function ledOnClickSound () {
-  ledSound.currentTime = 0;
-  ledSound.play(); 
+  ledSound2.currentTime = 0;
+  ledSound2.play(); 
 };
 
 function errorOnClickSound () {
